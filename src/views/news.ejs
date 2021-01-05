@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>News</title>
+</head>
+<body>
+    <h1>Some latest news</h1>
+
+    <div class="wrapper">
+        <div class="news">
+            <% articles.forEach((article) => { %>
+                <a style="background-image: url(<%= article.urlToImage%>); 
+                background-size: cover;
+                " href='<%=article.url%>' class="news_card">
+                    <h3 style="background: white;
+                    width: fit-content;
+                    margin: auto;
+                    margin-top: 20px;"><%=article.title%>:</h3>  
+                    <p><%=article.description%></p>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
