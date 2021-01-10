@@ -6,5 +6,5 @@ These are the dependencies: "dependencies": {
     "express": "^4.17.1",
     "fetch": "^1.1.0",
     "nodemon": "^2.0.6"
-  }
+  }.
   Just download and extract the code, then run node app.js. Voila, You are ready to see the latest news on localhost 3000.
